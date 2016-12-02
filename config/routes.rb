@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   # get 'welcome/index'
   
   root 'welcome#index'
-  
+  get 'my_portfolio', to: "users#my_portfolio"
   
 
   # Example of regular route:
