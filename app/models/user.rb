@@ -44,15 +44,15 @@ class User < ActiveRecord::Base
     (first_name_matches(param) + last_name_matches(param) + email_matches(param)).uniq
   end
   
-  def first_name_matches(param)
+  def self.first_name_matches(param)
     matches('first_name', param)
   end
   
-  def last_name_matches(param)
+  def self.last_name_matches(param)
     matches('last_name', param)
   end
   
-  def email_matches(param)
+  def self.email_matches(param)
     matches('email', param)
   end
   
