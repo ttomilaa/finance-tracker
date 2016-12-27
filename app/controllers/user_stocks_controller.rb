@@ -41,7 +41,7 @@ class UserStocksController < ApplicationController
       end
     end
     
-    #@user_stock = UserStock.new(user_stock_params)
+    @user_stock = UserStock.new(user_stock_params)
 
     respond_to do |format|
       if @user_stock.save
